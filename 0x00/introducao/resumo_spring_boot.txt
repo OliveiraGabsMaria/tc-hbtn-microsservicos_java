@@ -1,0 +1,5 @@
+Spring Boot é um framework que ajuda a criar aplicações stand alone, tendo como facilidade as configurações iniciais do projeto, infraestrutura organizando e otimizando sua produção;
+Conveção sobre a configuração, servidor embarcado, ajuda com métricas e saude da aplicação e organiza o pom.xml;
+Basta adicionar a dependencia no arquivo pom.xml e o springboot baixa ela e sub dependencias necessárias para o funcionamento;
+Eclipse, pois a configuração do spring boot fica mais fácil e a visibilidade de código fica mais limpa;
+O Spring Initializr é uma interface web que tem como funcionabilidade gerar projetos maven através de uma estrutura de configurações pré-moldadas;
