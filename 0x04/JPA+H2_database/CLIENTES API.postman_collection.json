@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "657dfe62-4522-4915-a587-98d3498a258d",
+		"name": "CLIENTES API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ADD",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Gabrielly\",\n    \"idade\": 21,\n    \"email\": \"gabrielly@email.com\",\n    \"telefones\": [\n        {\n            \"ddd\": \"11\",\n            \"numero\": \"22222-2222\"\n        }\n    ],\n    \"enderecos\": [\n        {\n            \"logradouro\": \"Rua\",\n            \"endereco\": \"Do Limão\",\n            \"numero\": \"33\",\n            \"bairro\": \"Do Limoeiro\",\n            \"cidade\": \"Poco de Caldas\",\n            \"estado\": \"Minas Gerais\"\n        }\n    ]\n}\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api-jpa-h2/addClient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api-jpa-h2",
+						"addClient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FIND_ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api-jpa-h2/findAllClients",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api-jpa-h2",
+						"findAllClients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FIND_BY_ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api-jpa-h2/findClientById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api-jpa-h2",
+						"findClientById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_BY_ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api-jpa-h2/removeClientById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api-jpa-h2",
+						"removeClientById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Gabrielly\",\n    \"idade\": 21,\n    \"email\": \"gabrielly@email.com\",\n    \"telefones\": [\n        {\n            \"ddd\": \"11\",\n            \"numero\": \"22222-2222\"\n        }\n    ],\n    \"enderecos\": [\n        {\n            \"logradouro\": \"Rua\",\n            \"endereco\": \"Do Limão\",\n            \"numero\": \"123\",\n            \"bairro\": \"Do Limoeiro\",\n            \"cidade\": \"Poco de Caldas\",\n            \"estado\": \"Minas Gerais\"\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api-jpa-h2/updateClientById/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api-jpa-h2",
+						"updateClientById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
